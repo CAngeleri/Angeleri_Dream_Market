@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Market | Landing Page</title>
+    <!-- tailwinds -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- my css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- stars import -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- header -->
+    <div class="inline-flex">
+      <img
+        src="/static/imgs/sodas/orange_soda.png"
+        alt="Orange soda"
+        style="width: 25%; height: auto"
+      />
+      <img
+        src="/static/imgs/sodas/peach_soda.png"
+        alt="Peach soda"
+        style="width: 25%; height: auto"
+      />
+      <img
+        src="/static/imgs/sodas/pink_soda.png"
+        alt="pink soda"
+        style="width: 25%; height: auto"
+      />
+      <img
+        src="/static/imgs/sodas/green_soda.png"
+        alt="green soda"
+        style="width: 25%; height: auto"
+      />
+    </div>
+
+    <div class="relative mb-5">
+
+        <!-- nav bar -->
+        <nav class="bg-white border-gray-200 dark:bg-gray-900 mb-5 shadow-lg sticky top-0">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    
+                <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <h2>🍐</h2>
+                    <h2>Dream Market</h2>
+                </a>
+    
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <li>
+                            <a href="/"
+                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="/view_all"
+                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                                aria-current="page">View All</a>
+                        </li>
+                        <li>
+                            <a href="/registration"
+                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                                aria-current="page">Stay in touch</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+      <!-- View All Section -->
+      <div>
+        <h1 class="text-center">All Products</h1>
+        <hr class="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700" />
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4 mx-5"
+        >
+          {% for product in products %}
+          <div class="m-2 p-3 text-center product-card shadow-md">
+            <a href="{{ url_for('product_page', product_id=product.id) }}">
+              <img src="{{ product.image_path }}" alt="{{ product.name }}" />
+              <h2 class="mt-3">{{ product.name }}</h2>
+              <p>{{ product.description }}</p>
+              <p class="price">Price: ${{ product.price }}</p>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <!-- Product Carousel -->
+    <h2 class="text-center mt-3 ">New to the Market 🍒</h2>
+    <hr class="h-px my-1 bg-gray-200 border-0 dark:bg-gray-700" />
+    <div class="max-w-3xl mx-auto relative mb-10 ">
+      <div
+        id="productCarousel"
+        class="carousel relative shadow-2xl overflow-hidden"
+      >
+        <div
+          class="carousel-inner relative overflow-hidden w-full flex shadow-md"
+        >
+          {% for product in products %}
+          <a
+            href="{{ url_for('product_page', product_id=product.id) }}"
+            class="carousel-item {% if loop.first %}active{% endif %} w-full p-4"
+          >
+            <div class="product-card shadow-md">
+              <img src="{{ product.image_path }}" alt="{{ product.name }}" />
+              <h2>{{ product.name }}</h2>
+              <p>{{ product.description }}</p>
+              <p class="price">Price: ${{ product.price }}</p>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+        <!-- Navigation buttons -->
+        <button
+          class="absolute left-0 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white text-black rounded-full flex items-center justify-center z-10"
+          onclick="scrollProducts('left')"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            ></path>
+          </svg>
+        </button>
+        <button
+          class="absolute right-0 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white text-black rounded-full flex items-center justify-center z-10"
+          onclick="scrollProducts('right')"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer  -->
+    <div class="row inline-flex bg-black text-white w-full p-5">
+      <div class="col ml-10 mr-5">
+        <h4>🍉 About me:</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum,
+          impedit.
+        </p>
+      </div>
+      <div class="col mr-10">
+        <h4>🍒 Disclaimer:</h4>
+        <p>
+          Unfortunately these refreshing beverages are examples of the power of
+          stable diffusion and all have been generated for the the propose of
+          this example. If you have questions or would like learn more
+          <a href="/registration" class="underline">let's connect!</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- JavaScript functions to control carousel -->
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".carousel-item");
+      const numVisibleSlides = 3;
+
+      // Function to show the specified slide
+      function showSlide(n) {
+        for (let i = 0; i < slides.length; i++) {
+          if (i >= n && i < n + numVisibleSlides) {
+            slides[i].style.display = "block"; // Show the slide
+          } else {
+            slides[i].style.display = "none"; // Hide the slide
+          }
+        }
+      }
+
+      // Function to scroll the products
+      function scrollProducts(direction) {
+        const totalSlides = slides.length;
+
+        if (direction === "right") {
+          currentSlide = (currentSlide + numVisibleSlides) % totalSlides;
+        } else if (direction === "left") {
+          currentSlide =
+            (currentSlide - numVisibleSlides + totalSlides) % totalSlides;
+        }
+
+        console.log("Direction:", direction);
+        console.log("Current Slide:", currentSlide);
+        showSlide(currentSlide);
+      }
+
+      // Show the initial set of slides
+      showSlide(currentSlide);
+    </script>
+    <!-- Include necessary JS for carousel initialization -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </body>
+</html>
