@@ -47,10 +47,18 @@ This project is my capstone project for the Coding Dojo Flask Stack. It utilizes
 
 ## Screenshots & Recordings
 
-![Screenshot 1](screenshots/screenshot1.png)
-![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 1](static/imgs/DreamMarketScreenshots/screenshot_1.png)
+![Screenshot 2](static/imgs/DreamMarketScreenshots/screenshot_2.png)
+![Screenshot 3](static/imgs/DreamMarketScreenshots/screenshot_3.png)
+![Screenshot 4](static/imgs/DreamMarketScreenshots/screenshot_4.png)
+![Screenshot 5](static/imgs/DreamMarketScreenshots/screenshot_5.png)
+![Screenshot 6](static/imgs/DreamMarketScreenshots/screenshot_6.png)
+![Screenshot 7](static/imgs/DreamMarketScreenshots/screenshot_7.png)
+![Screenshot 8](static/imgs/DreamMarketScreenshots/screenshot_8.png)
+![Screenshot 9](static/imgs/DreamMarketScreenshots/screenshot_9.png)
+![Screenshot 10](static/imgs/DreamMarketScreenshots/screenshot_10.png)
 
-[![Recording](screenshots/recording_thumbnail.png)](recordings/Recording_2024-07-12_145741.mp4)
+[![Recording](static/imgs/DreamMarketScreenshots/recording_thumbnail.png)](static/imgs/DreamMarketScreenshots/Recording_2024-07-12_145741.mp4)
 
 ## Contact
 
