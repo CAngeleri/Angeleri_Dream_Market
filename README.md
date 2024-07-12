@@ -56,14 +56,25 @@ This project is my capstone project for the Coding Dojo Flask Stack. It utilizes
 ![Screenshot 7](flask_app/static/imgs/DreamMarketScreenshots/Screenshot7.png)
 ![Screenshot 8](flask_app/static/imgs/DreamMarketScreenshots/Screenshot8.png)
 ![Screenshot 9](flask_app/static/imgs/DreamMarketScreenshots/Screenshot9.png)
+![Screenshot 10](flask_app/static/imgs/DreamMarketScreenshots/Screenshot10.png)
 
+[![Mobile View](flask_app/static/imgs/DreamMarketScreenshots/MobileView.mp4)](flask_app/static/imgs/DreamMarketScreenshots/MobileView.mp4)
+[![Desktop View](flask_app/static/imgs/DreamMarketScreenshots/DesktopView.mp4)](flask_app/static/imgs/DreamMarketScreenshots/DesktopView.mp4)
 
-[![Recording](flask_app/static/imgs/DreamMarketScreenshots/MobileView.mp4)](flask_app/static/imgs/DreamMarketScreenshots/MobileView.mp4)
-[![Recording](flask_app/static/imgs/DreamMarketScreenshots/DesktopView.mp4)](flask_app/static/imgs/DreamMarketScreenshots/DesktopView.mp4)
+## Lessons Learned
+
+Throughout this project, I gained a deeper understanding of:
+
+- Building and structuring a Flask application.
+- Integrating a MySQL database with a Flask backend.
+- Creating responsive and mobile-friendly web designs.
+- Implementing carousels for dynamic content display.
+- Using Flask-Mail for email functionality.
+- Debugging and troubleshooting common issues in web development.
 
 ## Contact
 
-For any inquiries, please reach out to the application owner through the contact form integrated into the application.
+For any inquiries, please reach out to me on LinkedIn: [Cameron Angeleri](https://www.linkedin.com/in/cameron-angeleri/)
 
 ---
 
