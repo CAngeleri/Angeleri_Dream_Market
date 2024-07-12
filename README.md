@@ -1,4 +1,5 @@
-# Capstone Project: Flask Application
+# Flask Capstone Project: DreamMarket 🍐
+## A mobile-friendly e-commerce site featuring innovative design and a robust backend
 
 ## Overview
 
