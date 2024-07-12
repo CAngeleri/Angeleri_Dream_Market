@@ -4,6 +4,8 @@
 
 This project is my capstone project for the Coding Dojo Flask Stack. It utilizes Flask, MySQL, and features a responsive mobile-friendly design. Key features include carousels, stable diffused images, and Flask-Mail integration to connect with the application owner.
 
+To enjoy the project by check out the screen recordings provided for both desktop and mobile experiences or by installing on to your local machine! 
+
 ## Features
 
 - **Flask Framework**: Lightweight WSGI web application framework.
@@ -50,13 +52,11 @@ This project is my capstone project for the Coding Dojo Flask Stack. It utilizes
 ![Screenshot 1](flask_app/static/imgs/DreamMarketScreenshots/Screenshot1.png)
 ![Screenshot 2](flask_app/static/imgs/DreamMarketScreenshots/Screenshot2.png)
 ![Screenshot 3](flask_app/static/imgs/DreamMarketScreenshots/Screenshot3.png)
-![Screenshot 4](flask_app/static/imgs/DreamMarketScreenshots/Screenshot4.png)
 ![Screenshot 5](flask_app/static/imgs/DreamMarketScreenshots/Screenshot5.png)
 ![Screenshot 6](flask_app/static/imgs/DreamMarketScreenshots/Screenshot6.png)
 ![Screenshot 7](flask_app/static/imgs/DreamMarketScreenshots/Screenshot7.png)
 ![Screenshot 8](flask_app/static/imgs/DreamMarketScreenshots/Screenshot8.png)
 ![Screenshot 9](flask_app/static/imgs/DreamMarketScreenshots/Screenshot9.png)
-![Screenshot 10](flask_app/static/imgs/DreamMarketScreenshots/Screenshot10.png)
 
 [![Mobile View](flask_app/static/imgs/DreamMarketScreenshots/MobileView.mp4)](flask_app/static/imgs/DreamMarketScreenshots/MobileView.mp4)
 [![Desktop View](flask_app/static/imgs/DreamMarketScreenshots/DesktopView.mp4)](flask_app/static/imgs/DreamMarketScreenshots/DesktopView.mp4)
