@@ -1,0 +1,17 @@
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background: #B2DFEE ; 
+    border: 2px solid #777;
+    margin-bottom: 5;
+}
+nav {
+    background-color: #B2DFEE;
+}
+
+body {
+    background-color: #AFEEEE;
+    color: white; /* Adjust text color as needed */
+}
