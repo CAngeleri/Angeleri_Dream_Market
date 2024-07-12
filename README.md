@@ -58,8 +58,8 @@ This project is my capstone project for the Coding Dojo Flask Stack. It utilizes
 ![Screenshot 9](flask_app/static/imgs/DreamMarketScreenshots/Screenshot9.png)
 
 
-[![Recording](flask_app/static/imgs/DreamMarketScreenshots/Screenshot1.png)](flask_app/static/imgs/DreamMarketScreenshots/MobileView.mp4)
-[![Recording](flask_app/static/imgs/DreamMarketScreenshots/Screenshot1.png)](flask_app/static/imgs/DreamMarketScreenshots/DesktopView.mp4)
+[![Recording](flask_app/static/imgs/DreamMarketScreenshots/MobileView.mp4)](flask_app/static/imgs/DreamMarketScreenshots/MobileView.mp4)
+[![Recording](flask_app/static/imgs/DreamMarketScreenshots/DesktopView.mp4)](flask_app/static/imgs/DreamMarketScreenshots/DesktopView.mp4)
 
 ## Contact
 
