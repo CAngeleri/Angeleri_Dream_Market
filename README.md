@@ -47,19 +47,19 @@ This project is my capstone project for the Coding Dojo Flask Stack. It utilizes
 
 ## Screenshots & Recordings
 
-![Screenshot 1](static/imgs/DreamMarketScreenshots/Screenshot1.png)
-![Screenshot 2](static/imgs/DreamMarketScreenshots/Screenshot2.png)
-![Screenshot 3](static/imgs/DreamMarketScreenshots/Screenshot3.png)
-![Screenshot 4](static/imgs/DreamMarketScreenshots/Screenshot4.png)
-![Screenshot 5](static/imgs/DreamMarketScreenshots/Screenshot5.png)
-![Screenshot 6](static/imgs/DreamMarketScreenshots/Screenshot6.png)
-![Screenshot 7](static/imgs/DreamMarketScreenshots/Screenshot7.png)
-![Screenshot 8](static/imgs/DreamMarketScreenshots/Screenshot8.png)
-![Screenshot 9](static/imgs/DreamMarketScreenshots/Screenshot9.png)
-![Screenshot 10](static/imgs/DreamMarketScreenshots/Screenshot10.png)
+![Screenshot 1](flask_app/static/imgs/DreamMarketScreenshots/Screenshot1.png)
+![Screenshot 2](flask_app/static/imgs/DreamMarketScreenshots/Screenshot2.png)
+![Screenshot 3](flask_app/static/imgs/DreamMarketScreenshots/Screenshot3.png)
+![Screenshot 4](flask_app/static/imgs/DreamMarketScreenshots/Screenshot4.png)
+![Screenshot 5](flask_app/static/imgs/DreamMarketScreenshots/Screenshot5.png)
+![Screenshot 6](flask_app/static/imgs/DreamMarketScreenshots/Screenshot6.png)
+![Screenshot 7](flask_app/static/imgs/DreamMarketScreenshots/Screenshot7.png)
+![Screenshot 8](flask_app/static/imgs/DreamMarketScreenshots/Screenshot8.png)
+![Screenshot 9](flask_app/static/imgs/DreamMarketScreenshots/Screenshot9.png)
 
-[![Recording](static/imgs/DreamMarketScreenshots/recording_thumbnail.png)](static/imgs/DreamMarketScreenshots/MobileView.mp4)
-[![Recording](static/imgs/DreamMarketScreenshots/recording_thumbnail.png)](static/imgs/DreamMarketScreenshots/DesktopView.mp4)
+
+[![Recording](flask_app/static/imgs/DreamMarketScreenshots/Screenshot1.png)](flask_app/static/imgs/DreamMarketScreenshots/MobileView.mp4)
+[![Recording](flask_app/static/imgs/DreamMarketScreenshots/Screenshot1.png)](flask_app/static/imgs/DreamMarketScreenshots/DesktopView.mp4)
 
 ## Contact
 
