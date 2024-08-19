@@ -20,7 +20,7 @@ To enjoy the project by check out the screen recordings provided for both deskto
 
 1. **Clone the Repository**:
     ```bash
-    git clone <repository-url>
+    git clone [<repository-url>](https://github.com/CAngeleri/Angeleri_Dream_Market.git)
     cd <repository-directory>
     ```
 
