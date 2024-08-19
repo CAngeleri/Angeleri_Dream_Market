@@ -21,18 +21,17 @@ To enjoy the project by check out the screen recordings provided for both deskto
 1. **Clone the Repository**:
     ```bash
     git clone [<repository-url>](https://github.com/CAngeleri/Angeleri_Dream_Market.git)
-    cd <repository-directory>
+    cd Angeleri_Dream_Market
     ```
 
-2. **Create a Virtual Environment**:
+2. **Create a Virtual Environment / Install Dependencies**:
     ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    pipenv install flask pymysql
     ```
 
-3. **Install Dependencies**:
+3. **Launch Enviroment**:
     ```bash
-    pip install -r requirements.txt
+    pipenv shell
     ```
 
 4. **Configure Database**:
@@ -41,7 +40,7 @@ To enjoy the project by check out the screen recordings provided for both deskto
 
 5. **Run the Application**:
     ```bash
-    flask run
+    python server.py
     ```
 
 ## Usage
